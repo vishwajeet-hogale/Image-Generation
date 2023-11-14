@@ -40,32 +40,7 @@ Once trained, the generator can take random noise as input and generate realisti
 
 This repository contains code for generating dog images using Generative Adversarial Networks (GANs). The GAN architecture consists of a generator and a discriminator trained simultaneously to create realistic dog images.
 
-## Getting Started
 
-1. Clone this repository:
-
-    ```bash
-    git clone https://github.com/your-username/dog-gan.git
-    cd dog-gan
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Download and extract the dog dataset:
-
-    ```bash
-    !unzip "/content/drive/My Drive/Projects_Colab/Dogs/dogs.zip"
-    ```
-
-4. Run the Jupyter Notebook:
-
-    ```bash
-    jupyter notebook DOGSGAN.ipynb
-    ```
 
 ## Overview
 

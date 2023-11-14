@@ -36,6 +36,68 @@ The adversarial process continues until the generator generates images that are 
 
 Once trained, the generator can take random noise as input and generate realistic images.
 
+# Dog Image Generation using GANs
+
+This repository contains code for generating dog images using Generative Adversarial Networks (GANs). The GAN architecture consists of a generator and a discriminator trained simultaneously to create realistic dog images.
+
+## Getting Started
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/your-username/dog-gan.git
+    cd dog-gan
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Download and extract the dog dataset:
+
+    ```bash
+    !unzip "/content/drive/My Drive/Projects_Colab/Dogs/dogs.zip"
+    ```
+
+4. Run the Jupyter Notebook:
+
+    ```bash
+    jupyter notebook DOGSGAN.ipynb
+    ```
+
+## Overview
+
+- `DOGSGAN.ipynb`: Jupyter Notebook containing the code for training a GAN to generate dog images.
+
+## Components
+
+### Discriminator
+
+The `Discriminator` class is responsible for evaluating the authenticity of input images. It consists of a series of convolutional layers with leaky ReLU activation and batch normalization.
+
+### Generator
+
+The `Generator` class generates new images. It consists of transposed convolutional layers with batch normalization and ReLU activation, producing realistic dog images.
+
+## Dataset
+
+The dog images dataset is loaded using the `ImageDataGenerator` from Keras. Image augmentation techniques such as shear, zoom, and horizontal flip are applied to increase dataset diversity.
+
+## Training
+
+The GAN is trained over multiple epochs. The training loop alternates between updating the weights of the discriminator and generator. Real and fake images are used to calculate adversarial losses.
+
+## Results
+
+Generated images are saved in the `/content/Results/` directory during training. You can visualize the generated images using the saved PNG files.
+
+## Tensorboard Visualization
+
+Tensorboard logs are not implemented in the notebook. You can consider adding Tensorboard visualization for monitoring training progress.
+
+
 ## Customization
 Feel free to customize the code and experiment with different hyperparameters, architectures, and datasets. You can also train the GAN on your own dataset by replacing the training data.
 
